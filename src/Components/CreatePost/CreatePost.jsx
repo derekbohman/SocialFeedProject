@@ -12,32 +12,44 @@ const CreatePost = (props) => {
       post: post,
     };
     console.log(newEntry);
-    props.createNewPost(newEntry);
+    props.addNewPostProperty(newEntry);
+    setName("");
+    setPost("");
   }
 
   return (
     <form onSubmit={handleSubmit} className="form-grid">
       <div className="form-group">
-        <label>Name</label>
-        <input
-          type="text"
-          className="form-control"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-        />
+        <div className="name-label">
+          <label>Name</label>
+        </div>
+        <div className="name-text">
+          <input
+            type="text"
+            className="form-control"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+          />
+        </div>
       </div>
       <div className="form-group">
-        <label>Post</label>
-        <input
-          type="text"
-          className="form-control"
-          value={post}
-          onChange={(event) => setPost(event.target.value)}
-        />
+        <div className="post-label">
+          <label>Post</label>
+        </div>
+        <div className="post-text">
+          <textarea
+            type="text"
+            className="form-control"
+            value={post}
+            onChange={(event) => setPost(event.target.value)}
+          />
+        </div>
       </div>
-      <button type="submit" className="submit-button">
-        Add
-      </button>
+      <div className="button">
+        <button type="submit" className="submit-button">
+          Create
+        </button>
+      </div>
     </form>
   );
 };

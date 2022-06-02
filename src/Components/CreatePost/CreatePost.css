@@ -1,7 +1,22 @@
 .form-grid {
   display: grid;
+  background-color: white;
 }
 
 .submit-button {
   margin-top: 1rem;
+  width: 6rem;
+  border-radius: 5rem;
+  background-color: #4267B2;
+  color: white;
+}
+
+.form-control {
+    width: 5rem;
+    resize: none;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
 }

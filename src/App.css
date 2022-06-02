@@ -1,7 +1,11 @@
 .border-box {
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin: 1em;
-    padding: 1em;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.container-fluid {
+    padding-left: 10rem;
 }

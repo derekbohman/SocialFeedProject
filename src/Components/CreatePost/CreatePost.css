@@ -7,16 +7,54 @@
   margin-top: 1rem;
   width: 6rem;
   border-radius: 5rem;
-  background-color: #4267B2;
+  background-color: #4267b2;
   color: white;
 }
 
-.form-control {
-    width: 5rem;
-    resize: none;
+.input-name {
+    width: 25rem;
+    border-radius: 0.5rem;
+}
+
+.post-text-area {
+    width: 25rem;
+    border-radius: 0.5rem;
+}
+
+.name-form {
+    border-radius: 5rem;
+}
+
+.post-form {
+  resize: none;
+  padding-top: 1rem;
+  border-radius: 5rem;
 }
 
 .button {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
+}
+
+.name,
+.post {
+  display: flex;
+}
+
+.post-text-area {
+    resize: none;
+}
+
+.name-label,
+.post-label {
+  display: flex;
+  align-items: center;
+}
+
+.post-label {
+  padding-right: 0.9rem;
+}
+
+.name-label {
+  padding-right: 0.3rem;
 }

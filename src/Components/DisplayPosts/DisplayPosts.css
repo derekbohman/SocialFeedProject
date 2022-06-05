@@ -1,7 +1,36 @@
-.name {
-    font-weight: bold;
+.display-window {
+  border: 0.2rem solid black;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem gray;
+  padding-bottom: 1rem;
 }
 
-.post {
-    word-wrap: break-word;
+.display-name {
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.display-post {
+  word-wrap: break-word;
+  padding-left: 1rem;
+}
+
+.like,
+.dislike {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding: none;
+}
+
+.like-button,
+.dislike-button {
+  border-radius: 1rem;
+  width: 4rem;
 }

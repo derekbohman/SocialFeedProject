@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import CustomButton from "../CustomButton/CustomButton";
 import "./DisplayPosts.css";
 
 const DisplayPosts = (props) => {
@@ -5,9 +7,17 @@ const DisplayPosts = (props) => {
     <div className="table">
       {props.parentPosts.map((post) => {
         return (
-          <div>
-            <div className="name">{post.name}</div>
-            <div className="post">{post.post}</div>
+          <div className="display-window">
+            <div className="display-name">{post.name}</div>
+            <div className="display-post">{post.post}</div>
+            <div className="buttons">
+              <div className="like">
+                <CustomButton className="like-button">Like</CustomButton>
+              </div>
+              <div className="dislike">
+                <CustomButton className="dislike-button">Dislike</CustomButton>
+              </div>
+            </div>
           </div>
         );
       })}

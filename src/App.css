@@ -4,28 +4,26 @@
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.3rem gray;
+  border: 0.2rem solid black;
 }
 
 .border-box-display {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem gray;
-    height: 10rem;
-    padding-bottom: 2rem;
-    display: flex;
-  }
+  margin: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem gray;
+  display: flex;
+  height: 0rem;
+}
 
 .container-fluid {
-    background-color: #e4f8ed;
+  background-color: white;
 }
 
 .heading {
-    background-color: white;
+  background-color: white;
 }
 
 .row {
-    display: flex;
-    justify-content: center;
+  justify-content: center;
 }
